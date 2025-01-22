@@ -1,5 +1,5 @@
 import styles from './ThemeSwitcher.module.scss';
-import logo from '../../../public/img/Icons/Logo.svg';
+import logo from '../../../public/img/Icons/Logo-light.svg';
 
 export const ThemeSwitcher = () => {
   return (
