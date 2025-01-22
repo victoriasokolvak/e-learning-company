@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Services",
+    "image": "./public/img/slider/Services.png"
+  },
+  {
+    "title": "Instructional Design",
+    "image": "./public/img/slider/Instructional-Design.png"
+  },
+  {
+    "title": "eLearning Development",
+    "image": "./public/img/slider/eLearning-Development.png"
+  },
+  {
+    "title": "eLearning Price Quote",
+    "image": "./public/img/slider/Services.png"
+  },
+  {
+    "title": "eLearning Packages",
+    "image": "./public/img/slider/eLearning-Packages.png"
+  },
+  {
+    "title": "Contact us",
+    "image": "./public/img/slider/eLearning-Development.png"
+  }
+]

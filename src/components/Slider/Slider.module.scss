@@ -1,0 +1,84 @@
+@use '../../App' as *;
+
+.wrapper {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center; 
+  margin: auto;
+  width: 100%;
+  max-width: 850px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.slide {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  text-align: center;
+  width: 400px;
+  height: 400px;
+
+  &__image {
+    position: relative;
+    max-width: 100%;
+    border-radius: 20px;
+  }
+
+  &__title {
+    position: absolute;
+    color: white;
+    
+  }
+}
+
+.email_slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3D948E;
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
+
+  &__icon {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    color: white;
+  }
+}
+
+.pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 25px;
+
+  &__bullet {
+    width: 15px;
+    height: 15px;
+    background-color: #FFFFFF59;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+  }
+
+  &__bullet_active {
+    width: 25px;
+    height: 25px;
+    background-color: white;
+  }
+}
+
+
