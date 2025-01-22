@@ -1,7 +1,9 @@
-@use '../../App' as *;
+@use '../../App.scss' as *;
+@use '../../styles/vars' as *;
+@use '../../styles/mixins' as *;
 
 .header {
-  background-color: #343434;
+  background-color: $c-header;
   height: 45px;
   display: flex;
   align-items: center;
@@ -30,8 +32,9 @@
 }
 
 .navigation {
+  @include small-text;
   display: flex;
   align-items: center;
-  color: white;
+  color: $c-background-light;
   gap: 32px;
 }

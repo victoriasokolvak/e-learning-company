@@ -1,10 +1,12 @@
-@use '../../App' as *;
+@use '../../App.scss' as *;
+@use '../../styles/vars' as *;
+@use '../../styles/mixins' as *;
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: $c-background-light;
   width: 260px;
   height: 400px;
   border-radius: 20px;
@@ -26,4 +28,9 @@
   width: 100%; 
   border: 1.04px solid #DED098;
   margin-bottom: 15px;
+}
+
+.text {
+  @include h6;
+  color: $c-title-secondary;
 }

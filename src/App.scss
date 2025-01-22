@@ -2,3 +2,7 @@
 @use './styles/fonts' as *;
 @use './styles/mixins' as *;
 @use './styles/vars' as *;
+
+html {
+  font-family: Montserrat, sans-serif;
+}
