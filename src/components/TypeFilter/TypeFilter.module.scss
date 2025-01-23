@@ -1,0 +1,55 @@
+@use '../../App.scss' as *;
+@use '../../styles/vars' as *;
+@use '../../styles/mixins' as *;
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title {
+  @include body-text;
+  color: $c-header;
+}
+
+.segmented_control {
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: nowrap;
+  padding: 5px;
+  border-radius: 20px;
+  gap: 10px;
+  background: $c-gray;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.arrow {
+  position: absolute;
+}
+
+.dropdown {
+  @include body-text;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  color: $c-header;
+}
+
+.selected {
+  background-color: inherit;
+  border: none;
+}
+
+.close {
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+}

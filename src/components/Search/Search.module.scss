@@ -1,0 +1,32 @@
+@use '../../App.scss' as *;
+@use '../../styles/vars' as *;
+@use '../../styles/mixins' as *;
+
+.search{
+  position: relative;
+  display: inline-block;
+
+  &__input {
+    @include body-text;
+    width: 300px;
+    padding: 12px 20px;
+    background-color: rgba($c-header, 0.1);
+    border: none;
+    border-radius: 28px;
+    outline: none;
+  
+    &::placeholder {
+      color: $c-header;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.75;
+    color: $c-header;
+    pointer-events: none;
+  }
+}
