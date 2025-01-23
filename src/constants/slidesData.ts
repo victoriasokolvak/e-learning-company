@@ -1,8 +1,8 @@
-import email from '../../public/img/Icons/email-icon.svg';
-import services from '../../public/img/Slider/Services.png';
-import instructionalDesign from '../../public/img/Slider/Instructional-Design.png';
-import eLearningDevelopment from '../../public/img/Slider/eLearning-Development.png';
-import eLearningPackages from '../../public/img/Slider/eLearning-Packages.png';
+import email from '/src/assets/img/Icons/email-icon.svg';
+import services from '/src/assets/img/Slider/Services.png';
+import instructionalDesign from '/src/assets/img/Slider/Instructional-Design.png';
+import eLearningDevelopment from '/src/assets/img/Slider/eLearning-Development.png';
+import eLearningPackages from '/src/assets/img/Slider/eLearning-Packages.png';
 
 export const slidesData = [
   { title: 'Services', image: services, alt: 'Services' },

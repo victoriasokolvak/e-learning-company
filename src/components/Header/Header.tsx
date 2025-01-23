@@ -1,5 +1,5 @@
 import styles from './Header.module.scss';
-import logo from '../../../public/img/Icons/Logo-dark.svg';
+import logo from '/src/assets/img/Icons/Logo-dark.svg';
 import { NAV_LINKS } from '../../constants/navItems';
 
 export const Header = () => {
