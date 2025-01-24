@@ -6,13 +6,9 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   text-align: left;
-  margin-left: 60px;
+  max-width: 1160px;
   margin-bottom: 70px;
-  gap: 30px;
-}
-
-.card {
-  width: 202px;
+  gap: 96px;
 }
 
 .img_wrapper {

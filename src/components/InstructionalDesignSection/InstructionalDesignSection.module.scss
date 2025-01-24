@@ -4,21 +4,26 @@
 
 .section {
   display: flex;
-  flex-direction: column;
-  padding: 46px 140px;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
+  max-width: 1160px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.content {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 108px;
-  padding-left: 60px;
-  max-width: 1200px;
 }
 
 .wrapper {
-  flex: 1;
-  min-width: 392px;
+  max-width: 392px;
+  max-height: 392px;
 }
 
 .image {
@@ -29,27 +34,24 @@
 
 .title {
   @include h2;
-  color: $c-title;
-  padding-left: 60px;
   margin-bottom: 35px;
+  color: $c-title;
 }
 
 .block {
-  flex: 2;
-  min-width: 300px;
   display: flex;
   flex-direction: column;
 
   &__title {
     @include h4;
-    color: $c-title-secondary;
     margin-bottom: 30px;
+    color: $c-title-secondary;
   }
 
   &__text {
     @include body-text;
-    color: $c-title-secondary;
     margin-bottom: 35px;
+    color: $c-title-secondary;
   }
 
   &__list {
@@ -59,10 +61,10 @@
   }
 
   &__list_item {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
     @include body-text;
+    display: flex;
+    align-items: center;
+    gap: 24px;
     color: $c-title-secondary;
   }
 }

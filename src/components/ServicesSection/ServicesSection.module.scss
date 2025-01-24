@@ -3,20 +3,19 @@
 @use '../../styles/mixins' as *;
 
 .services {
-  padding-right: 140px;
-  padding-left: 140px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .wrapper {
-  margin-left: 60px;
+  max-width: 1160px;
+  padding-left: 60px;
 }
 
 .title {
   @include h2;
   color: $c-title;
   margin-top: 65px;
-  margin-left: 60px;
   margin-bottom: 35px;
 }
 
@@ -24,34 +23,6 @@
   display: flex;
   gap: 50px;
   margin-bottom: 75px;
-  margin-left: 60px;
-  align-items: center;
 }
 
-.pagination {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10px;
-margin-top: 30px;
-
-span, button {
-  padding: 10px;
-  border: none;
-  background: none;
-  cursor: pointer;
-  font-size: 18px;
-}
-
-.activePage {
-  background: #4f9d92;
-  color: white;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-}
 
