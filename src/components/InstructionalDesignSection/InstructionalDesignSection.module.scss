@@ -1,0 +1,68 @@
+@use '../../App.scss' as *;
+@use '../../styles/vars' as *;
+@use '../../styles/mixins' as *;
+
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 46px 140px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 108px;
+  padding-left: 60px;
+  max-width: 1200px;
+}
+
+.wrapper {
+  flex: 1;
+  min-width: 392px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.title {
+  @include h2;
+  color: $c-title;
+  padding-left: 60px;
+  margin-bottom: 35px;
+}
+
+.block {
+  flex: 2;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @include h4;
+    color: $c-title-secondary;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    @include body-text;
+    color: $c-title-secondary;
+    margin-bottom: 35px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__list_item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    @include body-text;
+    color: $c-title-secondary;
+  }
+}
