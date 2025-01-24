@@ -1,5 +1,6 @@
 import './App.scss';
 import { Banner } from './components/Banner/Banner';
+import { Footer } from './components/Footer/Footer';
 import { Header } from './components/Header/Header';
 import { InstructionalDesignSection } from './components/InstructionalDesignSection/InstructionalDesignSection';
 import { ServicesSection } from './components/ServicesSection/ServicesSection';
@@ -17,6 +18,7 @@ function App() {
       <InstructionalDesignSection />
       <WorkWeDoSection />
       <TalkToUsSection />
+      <Footer />
     </>
   )
 }

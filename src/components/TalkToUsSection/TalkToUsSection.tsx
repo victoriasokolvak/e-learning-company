@@ -9,7 +9,6 @@ export const TalkToUsSection = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     console.log('Form submitted with:', { name, email, message });
-    alert('Form submitted successfully!');
     setName('');
     setEmail('');
     setMessage('');
@@ -18,8 +17,12 @@ export const TalkToUsSection = () => {
   return (
     <section className={styles.section}>
       <div  className={styles.container}>
-        <h1 className={styles.title}>Talk To Us About Your Project</h1>
-        <h2 className={styles.subtitle}>We will never send spam or add you to a mailing list</h2>
+        <h1 className={styles.title}>
+          Talk To Us About Your Project
+        </h1>
+        <h2 className={styles.subtitle}>
+          We will never send spam or add you to a mailing list
+        </h2>
 
         <form className={styles.form} onSubmit={handleSubmit}>
           <input

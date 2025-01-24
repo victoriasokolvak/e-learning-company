@@ -1,0 +1,75 @@
+@use '../../App.scss' as *;
+@use '../../styles/vars' as *;
+@use '../../styles/mixins' as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: $c-background-dark;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1160px;
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 66px 0;
+}
+
+.logo_wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 234px;
+  height: auto;
+  gap: 5px;
+}
+
+.logo {
+  width: 100%;
+
+  &__text {
+    @include text;
+    font-size: 12px;
+    line-height: 14px;
+    color: $c-text-light;
+  }
+}
+
+.navigation {
+  display: flex;
+  gap: 150px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+  &__item {
+    @include small-text;
+    color: $c-text-light;
+    text-align: left;
+  }
+}
+
+.bottom {
+  width: 100%;
+  background-color: $c-footer;
+
+  &__text {
+    @include small-text;
+    color: $c-gray-text;
+    padding: 26px 0;
+  }
+}
