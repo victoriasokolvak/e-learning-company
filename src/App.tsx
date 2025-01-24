@@ -4,6 +4,7 @@ import { Header } from './components/Header/Header';
 import { InstructionalDesignSection } from './components/InstructionalDesignSection/InstructionalDesignSection';
 import { ServicesSection } from './components/ServicesSection/ServicesSection';
 import { WeDesignSection } from './components/WeDesignSection/WeDesignSection';
+import { WorkWeDoSection } from './components/WorkWeDoSection/WorkWeDoSection';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <ServicesSection />
       <WeDesignSection />
       <InstructionalDesignSection />
+      <WorkWeDoSection />
     </>
   )
 }
