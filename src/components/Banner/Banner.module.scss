@@ -1,29 +1,39 @@
 @use '../../App.scss' as *;
 @use '../../styles/vars' as *;
+@use '../../styles/mixins' as *;
 
 .banner {
-  width: 100%;
-  height: 680px;
-  background-image: url('/src/assets/img/Banner.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  width: 100%;
+  height: 690px;
+  background-image: url('/src/assets/img/Banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1160px;
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
 }
 
 .line {
   width: 100%;
   height: 10px;
   background-color: $c-primary;
+
+  @include respond-to(tablet) {
+    height: 8px;
+  }
+
+  @include respond-to(mobile) {
+    height: 6px;
+  }
 }

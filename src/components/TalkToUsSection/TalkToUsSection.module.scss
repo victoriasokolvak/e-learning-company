@@ -17,12 +17,32 @@
   max-width: 1160px;
   padding-top: 50px;
   padding-bottom: 62px;
+
+  @include respond-to(tablet) {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  @include respond-to(mobile) {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
 }
 
 .title {
   @include h2;
   margin-bottom: 30px;
   color: $c-bg-light;
+
+  @include respond-to(tablet) {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  @include respond-to(mobile) {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
 }
 
 .subtitle {
@@ -30,6 +50,16 @@
   margin-bottom: 62px;
   font-size: 20px;
   color: $c-bg-light;
+
+  @include respond-to(tablet) {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+
+  @include respond-to(mobile) {
+    font-size: 12px;
+    margin-bottom: 30px;
+  }
 }
 
 .form {
@@ -53,6 +83,18 @@
   &::placeholder {
     color: $c-bg-light;
   }
+
+  @include respond-to(tablet) {
+    font-size: 14px;
+    width: 460px;
+    padding: 15px 30px;
+  }
+
+  @include respond-to(mobile) {
+    font-size: 12px;
+    width: 280px;
+    padding: 12px 20px;
+  }
 }
 
 .textarea {
@@ -67,10 +109,26 @@
   border: none;
   appearance: none;
   outline: none;
-  resize: none; 
+  resize: none;
 
   &::placeholder {
     color: $c-bg-light;
+  }
+
+  @include respond-to(tablet) {
+    font-size: 14px;
+    margin-bottom: 44px;
+    width: 460px;
+    padding: 15px 30px;
+    height: 120px;
+  }
+
+  @include respond-to(mobile) {
+    font-size: 12px;
+    margin-bottom: 32px;
+    width: 280px;
+    padding: 12px 20px;
+    height: 100px;
   }
 }
 
@@ -85,5 +143,15 @@
 
   &:hover {
     background-color: $c-primary-light;
+  }
+
+  @include respond-to(tablet) {
+    font-size: 16px;
+    padding: 12px 64px;
+  }
+
+  @include respond-to(mobile) {
+    font-size: 14px;
+    padding: 8px 44px;
   }
 }

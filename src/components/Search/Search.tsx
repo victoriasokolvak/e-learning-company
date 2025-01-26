@@ -16,7 +16,9 @@ export const Search: React.FC<SearchProps> = ({ search, setSearch }) => {
         value={search}
         onChange={(event) => setSearch(event.target.value)}
       />
-    <GrSearch className={styles.search__icon} />
+      <div className={styles.search__icon}>
+        <GrSearch />
+      </div>
     </div>
   );
 };

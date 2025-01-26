@@ -9,10 +9,21 @@
 }
 
 .container {
-  max-width: 1160px;
+  max-width: 1200px;
+  padding: 0 20px;
   padding-right: 60px;
   margin: 0 auto;
   margin-bottom: 60px;
+
+  @include respond-to(tablet) {
+    text-align: center;
+    padding-right: 20px;
+  }
+
+  @include respond-to(mobile) {
+    text-align: center;
+    padding-right: 20px;
+  }
 }
 
 .content {
@@ -20,11 +31,33 @@
   justify-content: center;
   align-items: center;
   gap: 108px;
+
+  @include respond-to(tablet) {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 50px;
+  }
+
+  @include respond-to(mobile) {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
 }
 
 .wrapper {
   max-width: 392px;
   max-height: 392px;
+
+  @include respond-to(tablet) {
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  @include respond-to(mobile) {
+    max-width: 250px;
+    max-height: 250px;
+  }
 }
 
 .image {
@@ -38,16 +71,43 @@
   flex-direction: column;
   max-width: 600px;
 
+  @include respond-to(tablet) {
+    text-align: left;
+    padding: 0 40px;
+    max-width: none;
+  }
+
+  @include respond-to(mobile) {
+    text-align: center;
+    padding: 0 20px;
+    max-width: none;
+  }
+
   &__title {
     @include h4;
     margin-bottom: 30px;
     color: var(--text-title-secondary);
+
+    @include respond-to(mobile) {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
   }
 
   &__text {
     @include body-text;
     margin-bottom: 35px;
     color: var(--text-title-secondary);
+
+    @include respond-to(tablet) {
+      font-size: 16px;
+      margin-bottom: 25px;
+    }
+
+    @include respond-to(mobile) {
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
   }
 
   &__list {
@@ -55,6 +115,18 @@
     flex-direction: column;
     max-width: 560px;
     gap: 15px;
+
+    @include respond-to(tablet) {
+      text-align: left;
+      max-width: none;
+      gap: 10px;
+    }
+
+    @include respond-to(mobile) {
+      text-align: left;
+      max-width: none;
+      gap: 8px;
+    }
   }
 
   &__list_item {
@@ -63,10 +135,32 @@
     align-items: center;
     gap: 24px;
     color: var(--text-title-secondary);
+
+    @include respond-to(tablet) {
+      gap: 16px;
+    }
+
+    @include respond-to(mobile) {
+      font-size: 12px;
+      gap: 12px;
+    }
   }
 
   &__check {
     width: 30px;
     height: 30px;
+
+    @include respond-to(tablet) {
+      align-self: flex-start;
+      margin-right: 20px;
+      width: 20px;
+      height: 20px;
+    }
+
+    @include respond-to(mobile) {
+      margin-right: 30px;
+      width: 12px;
+      height: 12px;
+    }
   }
 }

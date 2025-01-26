@@ -5,12 +5,14 @@
 .search{
   position: relative;
   display: inline-block;
+  width: 300px;
 
   &__input {
     @include body-text;
-    width: 300px;
+    width: 100%;
     padding: 12px 20px;
-    background-color: var(--search-bg); 
+    background-color: var(--search-bg);
+    color: var(--text-color);
     border: none;
     border-radius: 28px;
     outline: none;
@@ -21,6 +23,8 @@
   }
 
   &__icon {
+    width: 17px;
+    height: 17px;
     position: absolute;
     right: 15px;
     top: 50%;
