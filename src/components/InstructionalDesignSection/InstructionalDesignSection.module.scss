@@ -36,7 +36,7 @@
 .title {
   @include h2;
   margin-bottom: 35px;
-  color: $c-title;
+  color: $c-title-light;
 }
 
 .block {
@@ -47,13 +47,13 @@
   &__title {
     @include h4;
     margin-bottom: 30px;
-    color: $c-title-secondary;
+    color: var(--text-title-secondary);
   }
 
   &__text {
     @include body-text;
     margin-bottom: 35px;
-    color: $c-title-secondary;
+    color: var(--text-title-secondary);
   }
 
   &__list {
@@ -68,6 +68,11 @@
     display: flex;
     align-items: center;
     gap: 24px;
-    color: $c-title-secondary;
+    color: var(--text-title-secondary);
+  }
+
+  &__check {
+    width: 30px;
+    height: 30px;
   }
 }

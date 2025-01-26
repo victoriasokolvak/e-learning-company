@@ -10,7 +10,7 @@
 
 .title {
   @include body-text;
-  color: $c-header;
+  color: var(--text-color);
 }
 
 .control{
@@ -23,8 +23,8 @@
   @include body-text;
   padding: 3px 18px;
   border-radius: 14px;
-  background-color: $c-gray;
-  color: $c-header;
+  background-color: $c-gray-light;
+  color: $c-header-bg;
 }
 
 .dropdown {

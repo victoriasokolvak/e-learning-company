@@ -10,7 +10,7 @@
 
 .title {
   @include body-text;
-  color: $c-header;
+  color: var(--text-color);
 }
 
 .segmented_control {
@@ -21,7 +21,7 @@
   padding: 5px;
   border-radius: 20px;
   gap: 10px;
-  background: $c-gray;
+  background: $c-gray-light;
 }
 
 .circle {
@@ -40,7 +40,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  color: $c-header;
+  color: $c-header-bg;
 }
 
 .selected {

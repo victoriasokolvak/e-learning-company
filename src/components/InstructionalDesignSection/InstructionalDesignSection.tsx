@@ -21,17 +21,23 @@ export const InstructionalDesignSection = () => {
             </p>
             <ul className={styles.block__list}>
                 <li className={styles.block__list_item}>
-                  <CheckIcon />
+                  <div className={styles.block__check}>
+                    <CheckIcon />
+                  </div>
                   Each project requires a unique approach,
                   and we are ready for the challenge
                 </li>
                 <li className={styles.block__list_item}>
-                  <CheckIcon />
+                  <div className={styles.block__check}>
+                    <CheckIcon />
+                  </div>
                   Our expertise in the training and development
                   industry will make your project a success
                 </li>
                 <li className={styles.block__list_item}>
-                  <CheckIcon />
+                  <div className={styles.block__check}>
+                    <CheckIcon />
+                  </div>
                   Your goals and deadlines are our priority
                 </li>
               </ul>

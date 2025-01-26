@@ -2,7 +2,10 @@
 @use './styles/fonts' as *;
 @use './styles/mixins' as *;
 @use './styles/vars' as *;
+@use './styles/themes' as *;
 
 html {
   font-family: Montserrat, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--main-color);
 }

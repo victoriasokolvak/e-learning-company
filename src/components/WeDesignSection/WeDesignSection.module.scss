@@ -27,14 +27,14 @@
 
 .title {
   @include h1;
-  color: $c-title-secondary;
+  color: $c-title-dark;
   margin-bottom: 5px;
   text-transform: uppercase;
 }
 
 .question {
   @include h3;
-  color: $c-title-secondary;
+  color: $c-title-dark;
   margin-bottom: 35px;
 }
 
@@ -44,7 +44,7 @@
   padding: 15px 46px;
   border-radius: 25px;
   background-color: $c-primary;
-  color: $c-background-light;
+  color: $c-bg-light;
   border: none;
 }
 

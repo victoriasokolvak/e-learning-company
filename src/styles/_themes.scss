@@ -1,0 +1,23 @@
+@use 'vars' as *;
+
+html[data-theme="dark"] {
+  --bg-color: #{$c-footer-bg};
+  --bg-switcher: #{$c-bg-dark};
+  --text-title-secondary: #{$c-bg-light};
+  --header-bg: #{$c-bg-dark};
+  --search-bg: #{$c-search-bg-dark};
+  --text-color: #{$c-bg-light};
+  --main-color: #{$c-bg-light};
+  --switcher-bg: #{$c-header-bg};
+}
+
+html[data-theme="light"] {
+  --bg-color: #{$c-bg-light};
+  --bg-switcher: #{$c-bg-light};
+  --text-title-secondary: #{$c-title-dark};
+  --header-bg: #{$c-header-bg};
+  --search-bg: #{$c-search-bg-light};
+  --text-color: #{$c-header-bg};
+  --main-color: #{$c-text-dark};
+  --switcher-bg: #{$c-gray-light};
+}

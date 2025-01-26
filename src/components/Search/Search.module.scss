@@ -10,13 +10,13 @@
     @include body-text;
     width: 300px;
     padding: 12px 20px;
-    background-color: rgba($c-header, 0.1);
+    background-color: var(--search-bg); 
     border: none;
     border-radius: 28px;
     outline: none;
   
     &::placeholder {
-      color: $c-header;
+      color: var(--text-color);
     }
   }
 
@@ -26,7 +26,7 @@
     top: 50%;
     transform: translateY(-50%);
     opacity: 0.75;
-    color: $c-header;
+    color: var(--text-color);
     pointer-events: none;
   }
 }

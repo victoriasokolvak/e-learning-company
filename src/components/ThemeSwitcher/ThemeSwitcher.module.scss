@@ -5,31 +5,102 @@
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: $c-background-light;
+  position: relative;
+  background-color: var(--bg-switcher);
   width: 260px;
   height: 400px;
   border-radius: 20px;
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  padding: 0 42px;
 }
 
-.logo {
+.img_wrapper {
+  width: 100%;
+  height: 48px;
   margin-bottom: 5px;
 }
 
+.image {
+  width: 100%;
+  height: 100%;
+}
+
 .line {
-  position: relative;
-  width: 100%; 
-  border: 1.04px solid #DED098;
+  width: 100%;
+  border: 1px solid $c-accent-light;
   margin-bottom: 15px;
 }
 
 .text {
   @include h6;
-  color: $c-title-secondary;
+  color: var(--text-title-secondary);
+}
+
+.switcher {
+  display: flex;
+  position: absolute;
+  margin-top: 55px;
+  bottom: 55px;
+}
+
+.switch {
+  width: 120px;
+  height: 30px;
+}
+
+.input {
+  display: none;
+}
+
+.slider {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 30px;
+  padding: 0 10px;
+  transition: 0.4s;
+  background-color: var(--switcher-bg);
+
+  &:before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    left: 85px;
+    border-radius: 50px;
+    background: $c-bg-light url('/src/assets/img/Icons/Day.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid var(--switcher-bg);
+    transition: 0.4s;
+  }
+}
+
+input:checked + .slider {
+  justify-content: flex-end;
+
+  &:before {
+    transform: translateX(-100px); 
+    background: $c-bg-light url('/src/assets/img/Icons/Night.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.mode {
+  @include h6;
+  font-size: 12px;
+  line-height: 14px;
 }

@@ -16,17 +16,23 @@ export const WorkWeDoSection = () => {
             </p>
             <ul className={styles.block__list}>
                 <li className={styles.block__list_item}>
-                  <CheckIcon />
+                  <div className={styles.block__check}>
+                    <CheckIcon />
+                  </div>
                   We start each project with a careful
                   analysiys of your learning needs
                 </li>
                 <li className={styles.block__list_item}>
-                  <CheckIcon />
+                  <div className={styles.block__check}>
+                    <CheckIcon />
+                  </div>
                   We constantly look for ways to save your time
                   and money while exceeding your expectations
                 </li>
                 <li className={styles.block__list_item}>
-                  <CheckIcon />
+                  <div className={styles.block__check}>
+                    <CheckIcon />
+                  </div>
                   We don't stop working until you are satisfied
                   with the products we deliver
                 </li>

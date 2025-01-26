@@ -3,7 +3,7 @@
 @use '../../styles/mixins' as *;
 
 .header {
-  background-color: $c-header;
+  background-color: var(--header-bg);
   height: 45px;
   display: flex;
   align-items: center;
@@ -33,6 +33,6 @@
   @include small-text;
   display: flex;
   align-items: center;
-  color: $c-background-light;
+  color: $c-bg-light;
   gap: 32px;
 }
