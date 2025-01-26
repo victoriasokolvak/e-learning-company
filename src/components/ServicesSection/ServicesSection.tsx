@@ -27,7 +27,7 @@ export const ServicesSection = () => {
   });
 
   return (
-    <section className={styles.services}>
+    <section id='services' className={styles.services}>
       <div className={styles.wrapper}>
       <h2 className={styles.title}>Services We Provide</h2>
 

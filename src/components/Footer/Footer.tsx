@@ -18,8 +18,10 @@ export const Footer = () => {
               <ul key={index} className={styles.list}>
                 {list.map((item, id) => (
                   <li key={id} className={styles.list__item}>
-                    {item}
-                  </li>
+                    <a href={item.path} className={styles.link}>
+                    {item.label}
+                  </a>
+                </li>
                 ))}
               </ul>
             ))}

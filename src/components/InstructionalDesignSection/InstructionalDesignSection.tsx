@@ -4,7 +4,7 @@ import { CheckIcon } from '../ui/CheckIcon';
 
 export const InstructionalDesignSection = () => {
   return (
-    <section className={styles.section}>
+    <section id='instructional-design' className={styles.section}>
       <div className={styles.container}>
         <h2 className={styles.title}>Instructional Design</h2>
           <div className={styles.content}>

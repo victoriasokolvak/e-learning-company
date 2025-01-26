@@ -15,7 +15,7 @@ export const TalkToUsSection = () => {
   };
 
   return (
-    <section className={styles.section}>
+    <section id='contact' className={styles.section}>
       <div  className={styles.container}>
         <h1 className={styles.title}>
           Talk To Us About Your Project

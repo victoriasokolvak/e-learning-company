@@ -3,7 +3,7 @@ import man from '/src/assets/img/man.png';
 
 export const WeDesignSection = () => {
   return (
-    <section className={styles.section}>
+    <section id='eLearning-price-quote' className={styles.section}>
       <div className={styles.background}>
         <div className={styles.block}>
           <h1 className={styles.title}>We Design <br /> Learning.</h1>
