@@ -14,7 +14,7 @@ export const Computer = ({ borderColor }: { borderColor: string }) => {
         height="40.6063"
         rx="2.49103"
         stroke={borderColor}
-        stroke-width="2.13517"
+        strokeWidth="2.13517"
       />
       <line
         x1="0.609131"
@@ -22,7 +22,7 @@ export const Computer = ({ borderColor }: { borderColor: string }) => {
         x2="55.2409"
         y2="32.0193"
         stroke={borderColor}
-        stroke-width="2.13517"
+        strokeWidth="2.13517"
       />
       <ellipse
         cx="27.9252"
@@ -37,7 +37,7 @@ export const Computer = ({ borderColor }: { borderColor: string }) => {
         x2="27.918"
         y2="45.909"
         stroke={borderColor}
-        stroke-width="1.42344"
+        strokeWidth="1.42344"
       />
       <line
         x1="45.1772"
@@ -45,7 +45,7 @@ export const Computer = ({ borderColor }: { borderColor: string }) => {
         x2="10.6729"
         y2="46.9768"
         stroke={borderColor}
-        stroke-width="2.13517"
+        strokeWidth="2.13517"
       />
     </svg>
   );

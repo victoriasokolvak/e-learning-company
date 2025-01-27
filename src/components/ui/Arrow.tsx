@@ -14,8 +14,8 @@ export const Arrow = () => {
       <path
         d="M1 1L4.5 4.5L8 0.999999"
         stroke="currentColor"
-        stroke-width="1.4"
-        stroke-linecap="round"
+        strokeWidth="1.4"
+        strokeLinecap="round"
       />
     </svg>
   );

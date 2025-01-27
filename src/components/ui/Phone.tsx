@@ -14,7 +14,7 @@ export const Phone = ({ borderColor }: { borderColor: string }) => {
         height="53.1547"
         rx="6.18925"
         stroke={borderColor}
-        stroke-width="2.18444"
+        strokeWidth="2.18444"
       />
       <line
         x1="13.6525"
@@ -22,8 +22,8 @@ export const Phone = ({ borderColor }: { borderColor: string }) => {
         x2="24.5747"
         y2="6.14313"
         stroke={borderColor}
-        stroke-width="2.18444"
-        stroke-linecap="round"
+        strokeWidth="2.18444"
+        strokeLinecap="round"
       />
       <line
         x1="0.910156"
@@ -31,7 +31,7 @@ export const Phone = ({ borderColor }: { borderColor: string }) => {
         x2="38.0456"
         y2="10.5113"
         stroke={borderColor}
-        stroke-width="2.18444"
+        strokeWidth="2.18444"
       />
       <line
         x1="0.182129"
@@ -39,7 +39,7 @@ export const Phone = ({ borderColor }: { borderColor: string }) => {
         x2="37.3176"
         y2="44.7349"
         stroke={borderColor}
-        stroke-width="2.18444"
+        strokeWidth="2.18444"
       />
       <circle
         cx="19.114"

@@ -1,0 +1,19 @@
+@use '../../App.scss' as *;
+@use '../../styles/vars' as *;
+@use '../../styles/mixins' as *;
+
+.container {
+  position: absolute;
+  top: 830px;
+  left: 50%;
+  width: 1200px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
