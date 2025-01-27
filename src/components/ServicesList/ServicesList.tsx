@@ -1,3 +1,4 @@
+import React from 'react';
 import styles from './ServicesList.module.scss';
 import { services } from '../../constants/servicesData';
 import { getIconStyles } from '../../utils/typeServiceStyles';
@@ -32,7 +33,9 @@ export const ServiceList: React.FC<ServicesListProps> = ({
               className={styles.img_wrapper}
               style={getIconStyles(selectedType, types)}
             >
-              <img src={service.image} className={styles.image}/>
+              {React.createElement(service.imageComponent, {
+                borderColor: getBorderColor(selectedType, types),
+            })}
             </div>
 
             <h3 className={styles.title}>{splitTitle(service.title)}</h3>

@@ -1,8 +1,8 @@
 import styles from './TypeFilter.module.scss';
 import arrow from '/src/assets/img/Icons/Arrow.svg';
-import close from '/src/assets/img/Icons/Close.svg';
 import { getSegmentedControlStyles } from '../../utils/typeToggleStyles';
 import { getTypeStyles } from '../../utils/typeToggleStyles';
+import { Close } from '../ui/Close';
 
 type TypeFilterProps = {
   isTypeOpen: boolean;
@@ -20,8 +20,8 @@ export const TypeFilter: React.FC<TypeFilterProps> = ({
   types
 }) => {
   return (
-    <div className={styles.filter}>
-      <span className={styles.title}>Type</span>
+    <div className={`${styles.filter} ${isTypeOpen ? styles.open : ''}`}>
+      <h4 className={styles.title}>Type</h4>
       <div
         className={styles.segmented_control}
         onClick={() => setIsTypeOpen(!isTypeOpen)}
@@ -53,12 +53,12 @@ export const TypeFilter: React.FC<TypeFilterProps> = ({
       </div>
 
       {isTypeOpen && (
-        <img
-          src={close}
-          alt="Close button"
+        <div
           className={styles.close}
           onClick={() => setIsTypeOpen(false)}
-        />
+        >
+          <Close />
+        </div>
       )}
     </div>
   );

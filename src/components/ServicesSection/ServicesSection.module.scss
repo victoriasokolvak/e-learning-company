@@ -46,7 +46,7 @@
 
 .filters {
   display: flex;
-  gap: 50px;
+  flex-wrap: nowrap;
   margin-bottom: 75px;
 
   @include respond-to(tablet) {

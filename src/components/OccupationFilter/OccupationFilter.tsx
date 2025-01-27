@@ -1,6 +1,7 @@
 import styles from './OccupationFilter.module.scss';
-import close from '/src/assets/img/Icons/Close.svg';
 import { occupations } from '../../constants/occupations';
+import { Close } from '../ui/Close';
+import { Arrow } from '../ui/Arrow';
 
 type OccupationFilterProps = {
   selectedOccupation: string;
@@ -17,15 +18,22 @@ export const OccupationFilter: React.FC<OccupationFilterProps> = ({
 }) => {
   return (
     <div className={styles.filter}>
-      <span className={styles.title}>Occupation</span>
-        <div
-          className={styles.control}
-          onClick={() => setIsOccupationOpen(!isOccupationOpen)}
-        >
-
+      <h4 className={styles.title}>Occupation</h4>
+      <div className={styles.wrapper}>
         {!isOccupationOpen && (
-          <div className={styles.occupation}>
-            {selectedOccupation}
+          <div className={styles.wrapper__close}>
+            <div
+              className={styles.occupation}
+              onClick={() => setIsOccupationOpen(true)}
+            >
+              {selectedOccupation}
+            </div>
+            <div
+              className={styles.arrow}
+              onClick={() => setIsOccupationOpen(true)}
+            >
+              <Arrow />
+            </div>
           </div>
         )}
 
@@ -43,18 +51,15 @@ export const OccupationFilter: React.FC<OccupationFilterProps> = ({
                 {occ}
               </div>
             ))}
+            <div
+              className={styles.close}
+              onClick={() => setIsOccupationOpen(false)}
+            >
+              <Close />
+            </div>
           </div>
         )}
-        </div>
-
-        {isOccupationOpen && (
-          <img
-            src={close}
-            alt="Close button"
-            className={styles.close}
-            onClick={() => setIsOccupationOpen(false)}
-          />
-        )}
+      </div>
     </div>
   );
 };

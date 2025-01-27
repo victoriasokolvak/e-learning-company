@@ -5,36 +5,83 @@
 .filter {
   display: flex;
   align-items: center;
-  gap: 10px;
+  position: relative;
+
+  @include respond-to(mobile) {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 .title {
   @include body-text;
   color: var(--text-color);
+  white-space: nowrap;
 }
 
-.control{
-  display: flex; 
-  justify-content: center;
-  align-items: center; 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 103px;
+
+  @include respond-to(mobile) {
+    position: relative;
+    left: 0;
+  }
+
+  &__close {
+    display: flex;
+    gap: 10px;
+
+    @include respond-to(mobile) {
+      margin-top: 10px;
+      flex-direction: column;
+    }
+  }
 }
 
 .occupation {
   @include body-text;
+  letter-spacing: -0.5px;
   padding: 3px 18px;
   border-radius: 14px;
   background-color: $c-gray-light;
   color: $c-header-bg;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .dropdown {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  width: 470px;
   gap: 5px;
+  margin-top: 35px;
+
+  @include respond-to(mobile) {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+
+  @include respond-to(mobile) {
+    flex-direction: column;
+  }
 }
 
 .close {
-  width: 8px;
-  height: 8px;
+  color: var(--text-color);
   cursor: pointer;
 }

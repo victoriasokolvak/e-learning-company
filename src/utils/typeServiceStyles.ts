@@ -7,10 +7,11 @@ export const getIconStyles = (
   return {
     backgroundColor: selectedType
       ? selectedTypeData?.color || 'transparent'
-      : '#D9D9D9',
+      : '#DCCE90',
     border: selectedTypeData?.border
       ? `2px solid ${selectedTypeData.border}`
       : 'none',
+    color: selectedTypeData?.border ? selectedTypeData.border : 'inherit',
   };
 };
 
@@ -20,7 +21,5 @@ export const getBorderColor = (
 ) => {
   const selectedTypeData = types.find((type) => type.id === selectedType);
 
-  return selectedType
-    ? selectedTypeData?.border || selectedTypeData?.color
-    : '#D9D9D9';
+  return selectedTypeData?.border || '#FFFFFF';
 };

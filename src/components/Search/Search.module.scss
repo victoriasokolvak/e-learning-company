@@ -4,8 +4,10 @@
 
 .search{
   position: relative;
-  display: inline-block;
   width: 300px;
+  height: 45px;
+  min-width: 300px;
+  margin-right: 50px;
 
   &__input {
     @include body-text;
@@ -32,5 +34,9 @@
     opacity: 0.75;
     color: var(--text-color);
     pointer-events: none;
+  }
+
+  @include respond-to(mobile) {
+    margin: 0 auto;
   }
 }
