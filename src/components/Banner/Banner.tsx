@@ -1,3 +1,4 @@
+import { Slider } from '../Slider/Slider';
 import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher';
 import styles from './Banner.module.scss';
 
@@ -7,6 +8,7 @@ export const Banner = () => {
       <div id='home' className={styles.banner}>
         <div className={styles.container}>
           <ThemeSwitcher />
+          <Slider />
         </div>
       </div>
       <div className={styles.line}></div>

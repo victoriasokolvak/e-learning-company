@@ -72,11 +72,13 @@
   @include h4;
   grid-column: 1 / -1;
   align-items: center;
-  padding: 50px 0; 
+  padding: 50px 0;
+  min-height: 306px;
   color: $c-text-dark-light;
   text-align: center;
 
   @include respond-to(mobile) {
+    min-height: auto;
     font-size: 18px;
     padding: 30px 0;
   }
