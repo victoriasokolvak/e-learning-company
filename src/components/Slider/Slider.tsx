@@ -69,10 +69,12 @@ export const Slider = () => {
                 {slide.title === 'eLearning Price Quote' ? (
                   <img className={styles.slide__image} src={slide.img} alt={slide.alt} />
                 ) : slide.isEmail ? (
-                  <div className={styles.email_slide}>
-                    <img src={slide.img} alt={slide.alt} className={styles.email_slide__icon} />
-                    <h3 className={styles.email_slide__title}>{slide.title}</h3>
-                  </div>
+                  <a href="#contact">
+                    <div className={styles.email_slide}>
+                      <img src={slide.img} alt={slide.alt} className={styles.email_slide__icon} />
+                      <h3 className={styles.email_slide__title}>{slide.title}</h3>
+                    </div>
+                  </a>
                 ) : (
                   <>
                     <img className={styles.slide__image} src={slide.img} alt={slide.alt} />
