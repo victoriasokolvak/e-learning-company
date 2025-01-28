@@ -1,50 +1,57 @@
-# React + TypeScript + Vite
+# eLearning Company
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **eLearning Company** project! This repository contains a modern e-learning platform built using React, TypeScript, SCSS, and Vite.
 
-Currently, two official plugins are available:
+##  Demo
+Check out the live demo of the project here: [eLearning Company Demo](https://victoriasokolvak.github.io/e-learning-company/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+##  Installation and Setup
+### Follow these steps to set up and run the project locally.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/victoriasokolvak/e-learning-company.git
+   ```
 
-- Configure the top-level `parserOptions` property like this:
+2. **Navigate to the Project Directory**
+   ```bash
+   cd elearning-company
+   ```
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+3. **Install Dependencies**
+   Using npm:
+   ```bash
+   npm install
+   ```
+ 
+
+4. **Start the Development Server**
+
+   ```bash
+   npm run dev
+   ```
+
+
+   The application will be available at `http://localhost:5173` by default.
+
+---
+
+##  Project Structure
+Here's an overview of the key directories and files:
+
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+elearning-company
+├── src
+│   ├── assets      # Images, icons, and other media
+│   ├── components  # Reusable React components
+│   ├── constants   # Static data
+│   ├── context     # Context for theme change
+│   ├── styles      # SCSS mixins, variables, fonts, etc.
+│   ├── utils       # Utility functions
+│   ├── App.tsx     # Main application file
+│   └── main.tsx    # Application entry point
+├── package.json    # Project dependencies and scripts
+└── README.md       # Project documentation
 ```
+---
