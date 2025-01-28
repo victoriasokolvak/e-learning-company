@@ -65,18 +65,20 @@ export const Slider = () => {
             className={styles.swiper}
           >
             {secondSwiperSlides.map((slide, index) => (
-                <SwiperSlide key={index} className={styles.slide}>
-                  {slide.isEmail ? (
-                    <div className={styles.email_slide}>
-                      <img src={slide.img} alt={slide.alt} className={styles.email_slide__icon} />
-                      <h3 className={styles.email_slide__title}>{slide.title}</h3>
-                    </div>
-                  ) : (
-                    <>
-                      <img className={styles.slide__image} src={slide.img} alt={slide.alt} />
-                      <h3 className={styles.slide__title}>{slide.title}</h3>
-                    </>
-                  )}
+              <SwiperSlide key={index} className={styles.slide}>
+                {slide.title === 'eLearning Price Quote' ? (
+                  <img className={styles.slide__image} src={slide.img} alt={slide.alt} />
+                ) : slide.isEmail ? (
+                  <div className={styles.email_slide}>
+                    <img src={slide.img} alt={slide.alt} className={styles.email_slide__icon} />
+                    <h3 className={styles.email_slide__title}>{slide.title}</h3>
+                  </div>
+                ) : (
+                  <>
+                    <img className={styles.slide__image} src={slide.img} alt={slide.alt} />
+                    <h3 className={styles.slide__title}>{slide.title}</h3>
+                  </>
+                )}
                 </SwiperSlide>
               ))}
           </Swiper>

@@ -39,12 +39,14 @@
   @include respond-to(tablet) {
     flex-direction: column-reverse;
     text-align: center;
+    margin-top: 36px;
     gap: 50px;
   }
 
   @include respond-to(mobile) {
     flex-direction: column-reverse;
     text-align: center;
+    margin-top: 36px;
     gap: 30px;
   }
 }

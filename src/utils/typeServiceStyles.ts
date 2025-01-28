@@ -1,4 +1,4 @@
-export const getIconStyles = (
+export const getBgStyles = (
   selectedType: number | null,
   types: { id: number; color: string; border?: string }[]
 ) => {
@@ -15,11 +15,36 @@ export const getIconStyles = (
   };
 };
 
-export const getBorderColor = (
+export const getLineColor = (
   selectedType: number | null,
   types: { id: number; color: string; border?: string }[]
 ) => {
+  if (selectedType === null) {
+    return '#DCCE90';
+  }
+
   const selectedTypeData = types.find((type) => type.id === selectedType);
 
-  return selectedTypeData?.border || '#FFFFFF';
+  return selectedTypeData?.border || selectedTypeData?.color || '#FFFFFF';
+};
+
+export const getIconColor = (
+  selectedType: number | null,
+  types: { id: number; color: string; border?: string }[]
+): string => {
+  const selectedTypeData = types.find((type) => type.id === selectedType);
+
+  if (!selectedTypeData) {
+    return "#FFFFFF";
+  }
+
+  if (selectedTypeData.border) {
+    return selectedTypeData.border;
+  }
+
+  if (selectedTypeData.color) {
+    return "#FFFFFF";
+  }
+
+  return "#FFFFFF";
 };

@@ -4,9 +4,12 @@
 
 .header {
   background-color: var(--header-bg);
-  height: 45px;
   display: flex;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: 45px;
 }
 
 .container {
@@ -56,5 +59,30 @@
   align-items: center;
   width: 100%;
   color: $c-bg-light;
+}
+
+.burger_icon {
+  display: flex;
+  width: 25x;
+  height: 25px;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.side_menu {
+  position: fixed;
+  top: 0;
+  left: -110%;
+  width: 100vw;
+  height: 100vh;
+  transition: left 0.3 ease-in-out;
+  z-index: 2;
+  overflow: auto;
+}
+
+.side_menu.open {
+  left: 0;
 }
 

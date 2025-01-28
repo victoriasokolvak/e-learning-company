@@ -1,8 +1,21 @@
 import styles from './Header.module.scss';
 import logo from '/src/assets/img/Icons/Logo-dark.svg';
 import { NAV_LINKS_HEADER } from '../../constants/navItems';
+import { useState } from 'react';
+import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
+import menu from '/src/assets/img/Icons/Menu.svg';
 
 export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <>
       <header className={styles.header}>
@@ -20,8 +33,17 @@ export const Header = () => {
               ))}
             </ul>
           </nav>
+          <div className={styles.burger_icon} onClick={toggleMenu}>
+            <img src={menu} alt="Menu" />
+          </div>
         </div>
       </header>
+
+      <div className={`${styles.side_menu} ${isMenuOpen ? styles.open : ""}`}>
+        <div className={styles.menu_content}>
+          <BurgerMenu onClose={closeMenu} />
+        </div>
+      </div>
     </>
   );
 };

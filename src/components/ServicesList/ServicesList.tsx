@@ -1,8 +1,7 @@
 import React from 'react';
 import styles from './ServicesList.module.scss';
 import { services } from '../../constants/servicesData';
-import { getIconStyles } from '../../utils/typeServiceStyles';
-import { getBorderColor } from '../../utils/typeServiceStyles';
+import { getBgStyles, getIconColor, getLineColor } from '../../utils/typeServiceStyles';
 import { ServiceMessages } from '../../constants/messages';
 
 type ServicesListProps = {
@@ -31,18 +30,18 @@ export const ServiceList: React.FC<ServicesListProps> = ({
           <div key={index} className={styles.card}>
             <div
               className={styles.img_wrapper}
-              style={getIconStyles(selectedType, types)}
+              style={getBgStyles(selectedType, types)}
             >
               {React.createElement(service.imageComponent, {
-                borderColor: getBorderColor(selectedType, types),
-            })}
+                borderColor: getIconColor(selectedType, types),
+              })}
             </div>
 
             <h3 className={styles.title}>{splitTitle(service.title)}</h3>
 
             <div
               className={styles.line}
-              style={{ borderColor: getBorderColor(selectedType, types) }}
+              style={{ borderColor: getLineColor(selectedType, types) }}
             ></div>
 
             <p className={styles.description}>{service.description}</p>
