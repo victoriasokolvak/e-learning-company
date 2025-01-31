@@ -2,9 +2,9 @@ import { useState } from 'react';
 import styles from './ServicesSection.module.scss';
 import { services } from '../../constants/servicesData';
 import { Search } from '../Search/Search';
-import { TypeFilter } from '../TypeFilter/TypeFilter';
-import { OccupationFilter } from '../OccupationFilter/OccupationFilter';
-import { ServiceList } from '../ServicesList/ServicesList';
+import { TypeFilter } from '../TypeFilter';
+import { OccupationFilter } from '../OccupationFilter';
+import { ServiceList } from '../ServicesList';
 import { types } from '../../constants/colorTypes';
 
 export const ServicesSection = () => {

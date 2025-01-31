@@ -1,5 +1,5 @@
-import { Slider } from '../Slider/Slider';
-import { ThemeSwitcher } from '../ThemeSwitcher/ThemeSwitcher';
+import { Slider } from '../Slider';
+import { ThemeSwitcher } from '../ThemeSwitcher';
 import styles from './Banner.module.scss';
 
 export const Banner = () => {

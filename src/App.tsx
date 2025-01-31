@@ -1,13 +1,13 @@
 import './App.scss';
-import { Banner } from './components/Banner/Banner';
-import { Footer } from './components/Footer/Footer';
-import { Header } from './components/Header/Header';
-import { InstructionalDesignSection } from './components/InstructionalDesignSection/InstructionalDesignSection';
-import { ServicesSection } from './components/ServicesSection/ServicesSection';
-import { TalkToUsSection } from './components/TalkToUsSection/TalkToUsSection';
-import { ScrollLine } from './components/ScrollLine/ScrollLine';
-import { WeDesignSection } from './components/WeDesignSection/WeDesignSection';
-import { WorkWeDoSection } from './components/WorkWeDoSection/WorkWeDoSection';
+import { Banner } from './components/Banner';
+import { Footer } from './components/Footer';
+import { Header } from './components/Header';
+import { InstructionalDesignSection } from './components/InstructionalDesignSection';
+import { ServicesSection } from './components/ServicesSection';
+import { TalkToUsSection } from './components/TalkToUsSection';
+import { ScrollLine } from './components/ScrollLine';
+import { WeDesignSection } from './components/WeDesignSection';
+import { WorkWeDoSection } from './components/WorkWeDoSection';
 
 function App() {
   return (

@@ -2,7 +2,7 @@ import styles from './Header.module.scss';
 import logo from '/src/assets/img/Icons/Logo-dark.svg';
 import { NAV_LINKS_HEADER } from '../../constants/navItems';
 import { useState } from 'react';
-import { BurgerMenu } from '../BurgerMenu/BurgerMenu';
+import { BurgerMenu } from '../BurgerMenu';
 import menu from '/src/assets/img/Icons/Menu.svg';
 
 export const Header = () => {
