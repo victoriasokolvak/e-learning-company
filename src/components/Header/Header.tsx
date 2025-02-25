@@ -28,7 +28,7 @@ export const Header = () => {
             <ul className={styles.navigation}>
               {NAV_LINKS_HEADER.map((link) => (
                 <li key={link.id}>
-                  <a href={link.path}>{link.label}</a>
+                  <a href={link.path} className={styles.link}>{link.label}</a>
                 </li>
               ))}
             </ul>

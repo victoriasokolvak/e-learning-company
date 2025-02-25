@@ -140,6 +140,10 @@
   color: $c-bg-light;
   border: none;
 
+  &:hover {
+    background-color: $c-primary-light;
+  }
+
   @include respond-to(tablet) {
     font-size: 18px;
     padding: 12px 36px;

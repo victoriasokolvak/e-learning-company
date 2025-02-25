@@ -61,6 +61,10 @@
   color: $c-bg-light;
 }
 
+.link:hover {
+  text-decoration: underline;
+}
+
 .burger_icon {
   display: flex;
   width: 25x;

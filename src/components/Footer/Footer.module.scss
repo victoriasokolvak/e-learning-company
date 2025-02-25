@@ -120,6 +120,10 @@
   }
 }
 
+.link:hover {
+  text-decoration: underline;
+}
+
 .bottom {
   width: 100%;
   background-color: $c-footer-bg;

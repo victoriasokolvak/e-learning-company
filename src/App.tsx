@@ -8,10 +8,20 @@ import { TalkToUsSection } from './components/TalkToUsSection';
 import { ScrollLine } from './components/ScrollLine';
 import { WeDesignSection } from './components/WeDesignSection';
 import { WorkWeDoSection } from './components/WorkWeDoSection';
+import { Helmet, HelmetProvider } from "react-helmet-async";
+import Favicon from '/src/assets/img/Icons/Favicon.png';
 
 function App() {
   return (
-    <>
+    <HelmetProvider>
+      <Helmet>
+        <title>eLearning Company</title>
+        <meta
+          name="description"
+          content="An online learning services platform offering interactive courses."
+          />
+          <link rel="icon" type="image/png" href={Favicon} />
+      </Helmet>
       <Banner />
       <Header />
       <ScrollLine />
@@ -21,7 +31,7 @@ function App() {
       <WorkWeDoSection />
       <TalkToUsSection />
       <Footer />
-    </>
+    </HelmetProvider>
   )
 }
 
